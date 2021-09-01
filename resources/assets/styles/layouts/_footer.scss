@@ -1,0 +1,45 @@
+.footer {
+  background: #150873;
+  min-height: 300px;
+
+  .site-icon {
+    width: 100%;
+
+    @media screen and (min-width: 760px) {
+      max-width: 250px;
+    }
+  }
+
+  .footer-sidebar {
+    h2 {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        list-style-type: none;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .footer-social-links {
+    li.social-link-item {
+      list-style-type: none;
+      text-align: center;
+
+      a {
+        font-size: 18px;
+        background: #fff;
+        border-radius: 20px;
+        padding: 5px 10px;
+      }
+    }
+  }
+}

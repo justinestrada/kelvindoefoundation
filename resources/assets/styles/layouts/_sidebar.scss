@@ -1,0 +1,27 @@
+.blog-sidebar {
+  @extend .card;
+  @extend .rounded;
+
+  section:first-child {
+    padding: 10px;
+    background-color: #150873;
+
+    @extend .rounded-top;
+
+    h2 {
+      color: #fff;
+    }
+  }
+
+  section.widget_categories {
+    padding: 10px;
+
+    ul {
+      padding: 0;
+
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+}

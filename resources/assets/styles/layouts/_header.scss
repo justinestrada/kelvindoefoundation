@@ -4,4 +4,54 @@
 
 .banner .nav a {
   @extend .nav-link;
+
+  color: #fff;
+
+  &:hover {
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.banner {
+  background-color: #150873;
+
+  .navbar {
+    min-height: 80px;
+  }
+
+  .action {
+    background-color: #5333ed;
+    color: #fff;
+  }
+
+  .navbar-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-toggle {
+    margin: 0 0 0 auto;
+    display: block;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    font-size: 28px;
+    transform: rotate(180deg);
+    color: #fff;
+
+    &.collapsed {
+      transform: rotate(0deg);
+    }
+  }
+
+  @media screen and (min-width: 760px) {
+    .navbar-header {
+      width: auto;
+    }
+
+    .navbar-toggle {
+      display: none;
+    }
+  }
 }

@@ -56,7 +56,6 @@
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "import-glob": "~1.5",
-    "node-sass": "^5.0.0",
     "postcss-loader": "^4.0.4",
     "postcss-safe-parser": "^5.0.2",
     "resolve-url-loader": "^3.1.2",
@@ -76,8 +75,14 @@
     "yargs": "^16.1.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "bootstrap": "^4.5.3",
     "jquery": "^3.3.1",
+    "node-sass": "^6.0.1",
     "popper.js": "^1.14.7"
   }
 }

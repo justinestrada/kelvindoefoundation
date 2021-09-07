@@ -1,9 +1,30 @@
-.home-recent-posts {
-  .card {
-    width: 100%;
+.blog-categories-row {
+  a {
+    color: #000;
+    font-weight: bold;
 
-    @media screen and (min-width: 768px) {
-      width: 30%;
+    &:hover {
+      text-decoration: none;
+      color: #5333ed;
+    }
+  }
+}
+
+.blog-hero-wrapper {
+  background-size: cover;
+  background-position: center;
+
+  .blog-hero-wrapper-container {
+    height: calc(100vh - 80px);
+    padding: 10px;
+    background-color: rgba(21, 8, 115, 0.8);
+    color: #fff;
+
+    .action {
+      background-color: #5333ed;
+      color: #fff;
+      width: 250px;
+      padding: 10px 15px;
     }
   }
 }

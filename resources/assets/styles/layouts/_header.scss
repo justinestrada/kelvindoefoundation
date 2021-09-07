@@ -37,11 +37,24 @@
     border: 0;
     padding: 0;
     font-size: 28px;
-    transform: rotate(180deg);
     color: #fff;
 
+    .fa-times {
+      display: block;
+    }
+
+    .fa-bars {
+      display: none;
+    }
+
     &.collapsed {
-      transform: rotate(0deg);
+      .fa-times {
+        display: none;
+      }
+
+      .fa-bars {
+        display: block;
+      }
     }
   }
 
@@ -53,5 +66,30 @@
     .navbar-toggle {
       display: none;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 80px;
+    right: -5%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    background-color: #150873;
+    transition: width 400ms linear;
+
+    li {
+      padding: 15px 0;
+    }
+  }
+
+  .navbar-collapse.show {
+    width: 100%;
+    right: 0;
+    z-index: 99;
   }
 }

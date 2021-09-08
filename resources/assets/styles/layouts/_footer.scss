@@ -1,5 +1,5 @@
 .footer {
-  background: #150873;
+  background: #fff;
   min-height: 300px;
 
   .site-icon {
@@ -13,7 +13,6 @@
   .footer-sidebar {
     h2 {
       font-weight: bold;
-      color: #fff;
     }
 
     ul {
@@ -21,10 +20,6 @@
 
       li {
         list-style-type: none;
-
-        a {
-          color: #fff;
-        }
       }
     }
   }
@@ -36,8 +31,6 @@
 
       a {
         font-size: 18px;
-        background: #fff;
-        border-radius: 20px;
         padding: 5px 10px;
       }
     }

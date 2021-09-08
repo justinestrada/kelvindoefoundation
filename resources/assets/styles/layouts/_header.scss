@@ -5,15 +5,17 @@
 .banner .nav a {
   @extend .nav-link;
 
-  color: #fff;
-
   &:hover {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #150873;
   }
 }
 
-.banner {
-  background-color: #150873;
+header.banner {
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 8;
 
   .navbar {
     min-height: 80px;
@@ -37,23 +39,70 @@
     border: 0;
     padding: 0;
     font-size: 28px;
-    color: #fff;
+    color: #150873;
 
-    .fa-times {
-      display: block;
+    .toggle-wrap {
+      padding: 10px;
+      position: relative;
+      cursor: pointer;
+      float: left;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     }
 
-    .fa-bars {
-      display: none;
+    .toggle-bar {
+      width: 38px;
+      margin: 10px 0;
+      position: relative;
+      display: block;
+      border-top: 4px solid transparent;
+      top: 12px;
+      transition: all 0.2s ease-in-out;
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        background: #150873;
+        height: 4px;
+        width: 38px;
+        position: absolute;
+        top: -16px;
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        transition: all 0.2s ease-in-out;
+      }
+
+      &::after {
+        -ms-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
     }
 
     &.collapsed {
-      .fa-times {
-        display: none;
-      }
+      .toggle-bar {
+        border-top: 4px solid #150873;
 
-      .fa-bars {
-        display: block;
+        &::before,
+        &::after {
+          top: -26px;
+          -ms-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+          -ms-transform-origin: 13%;
+          -webkit-transform-origin: 13%;
+          transform-origin: 13%;
+        }
+
+        &::after {
+          top: -15px;
+        }
       }
     }
   }
@@ -79,7 +128,7 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
-    background-color: #150873;
+    background-color: #fff;
     transition: width 400ms linear;
 
     li {

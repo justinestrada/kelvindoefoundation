@@ -1,11 +1,11 @@
 // import external dependencies
 import 'jquery';
 import { library ,dom } from '@fortawesome/fontawesome-svg-core';
-import { faAngleDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown, faBars, faTimes, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faArrowAltCircleDown } from '@fortawesome/free-regular-svg-icons';
-import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-library.add(faArrowAltCircleDown, faAngleDown, faFacebook, faTwitter, faInstagram, faTwitter, faLinkedin, faBars, faTimes)
+library.add(faArrowAltCircleDown, faAngleDown, faFacebookF, faTwitter, faInstagram, faTwitter, faLinkedin, faBars, faTimes, faArrowRight)
 // Import everything from autoload
 import './autoload/**/*'
 

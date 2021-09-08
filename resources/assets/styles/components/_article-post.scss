@@ -1,17 +1,27 @@
 .home-recent-posts {
   .card {
     width: 100%;
+    border: 1px solid #150873;
 
     img {
       max-width: 100%;
     }
 
+    &:hover {
+      border: 1px solid #150873;
+    }
+
     @media screen and (min-width: 768px) {
       width: 30%;
+      border: 1px solid rgba(0, 0, 0, 0.125);
     }
   }
 
   article.post {
+    * {
+      transition: all 250ms linear;
+    }
+
     .categories-container {
       flex: 1 1;
       padding: 1.25rem;
@@ -22,7 +32,6 @@
 
     img {
       padding: 0 20px;
-      transition: all 0.5s linear;
     }
 
     .categories-secondary-container {
@@ -51,23 +60,19 @@
         visibility: hidden;
         opacity: 0;
         overflow: hidden;
-        transition: all 0.5s linear;
       }
 
       img {
         padding: 0;
-        transition: all 0.5s linear;
       }
 
       .categories-secondary-container {
         opacity: 1;
         visibility: visible;
         height: auto;
-        transition: all 0.5s linear;
       }
 
       .post-meta {
-        transition: all 0.5s linear;
         opacity: 0;
       }
     }
@@ -84,7 +89,6 @@
 
       img {
         padding: 0 20px;
-        transition: all 0.5s linear;
       }
 
       .categories-secondary-container {

@@ -6,8 +6,9 @@
             <img src="{{ get_field('site_logo', 'option') }}" alt="{{ get_bloginfo('name', 'display') }}" class="my-1 my-md-2 mx-auto" style="display: block; width: 100%; max-width: 180px;"/>
           </a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary_navigation" aria-expanded="false">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-times"></i>
+            <div class="toggle-wrap">
+              <span class="toggle-bar"></span>
+            </div>
           </button>
         </div>
         <div class="collapse navbar-collapse justify-content-end" id="primary_navigation">

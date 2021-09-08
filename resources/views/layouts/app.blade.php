@@ -5,7 +5,7 @@
     @php do_action('get_header') @endphp
     @include('partials.header')
     <div class="@yield('container','container-fluid px-0') wrap" role="document">
-        <main class="main">
+        <main class="pt-5 main">
           @yield('content')
         </main>
         @if (App\display_sidebar())

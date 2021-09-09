@@ -17,7 +17,7 @@
             'menu_class' => 'nav navbar-nav justify-content-around',
             ]) !!}
           @endif
-          <button type="submit" class="btn action">Subscribe</button>
+          <a href="https://www.paypal.com/paypalme/kelvindoefoundation/" target="_blank"><button type="submit" class="btn action">Donate</button></a>
         </div>
     </nav>
   </div>

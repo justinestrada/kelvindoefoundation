@@ -15,11 +15,32 @@
       font-weight: bold;
     }
 
+    .widget_block {
+      width: 100%;
+    }
+
     ul {
       padding: 0;
 
       li {
         list-style-type: none;
+
+        a {
+          &::after {
+            content: "\2192";
+            margin-left: 0;
+            opacity: 0;
+            transition: all 250ms linear;
+          }
+
+          &:hover {
+            &::after {
+              content: "\2192";
+              margin-left: 10px;
+              opacity: 1;
+            }
+          }
+        }
       }
     }
   }
@@ -29,7 +50,7 @@
       list-style-type: none;
       text-align: center;
 
-      a {
+      a.d-block {
         font-size: 18px;
         padding: 5px 10px;
       }

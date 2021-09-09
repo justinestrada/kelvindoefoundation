@@ -1,4 +1,4 @@
-<header class="banner shadow">
+<header class="banner">
   <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-md">
         <div class="navbar-header">

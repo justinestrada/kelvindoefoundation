@@ -5,11 +5,12 @@
 @section('content')
 <div class="blog-hero-wrapper" style="background-image: url({{get_field('blog_hero_image', 'option')}})">
   <div class="blog-hero-wrapper-container d-flex align-items-center">
-    <div class="blog-hero-wrapper-content">
+    <div class="container blog-hero-wrapper-content">
+      {!! do_shortcode('[aioseo_breadcrumbs]') !!}
       <h1>{!! get_the_title() !!}</h1>
       {!! get_field('blog_hero_image_content', 'option') !!}
       @if (get_field('blog_hero_image_action', 'option'))
-          <a href="{{get_field('blog_hero_image_action', 'option')}}"><button class="btn action">Contact</button></a>
+          <a href="{{get_field('blog_hero_image_action', 'option')['url']}}"><button class="btn action btn-kelvin">{{get_field('blog_hero_image_action', 'option')['title']}}</button></a>
       @endif
     </div>
   </div>

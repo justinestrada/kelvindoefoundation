@@ -16,15 +16,19 @@
 
   .blog-hero-wrapper-container {
     height: calc(100vh - 80px);
-    padding: 10px;
     background-color: rgba(21, 8, 115, 0.8);
     color: #fff;
 
-    .action {
-      background-color: #5333ed;
-      color: #fff;
-      width: 250px;
-      padding: 10px 15px;
+    .aioseo-breadcrumbs {
+      margin-bottom: 10px;
+
+      .aioseo-breadcrumb-separator {
+        margin: 0 3px;
+      }
+    }
+
+    a {
+      color: #525ddc;
     }
   }
 }

@@ -1,4 +1,5 @@
-<header class="banner">
+
+<header id="main-nav" class="banner">
   <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-md">
         <div class="navbar-header">
@@ -14,10 +15,10 @@
         <div class="collapse navbar-collapse justify-content-end" id="primary_navigation">
           @if (has_nav_menu('primary_navigation'))
             {!! wp_nav_menu(['theme_location' => 'primary_navigation', 
-            'menu_class' => 'nav navbar-nav justify-content-around',
+              'menu_class' => 'nav navbar-nav justify-content-around mr-md-5',
             ]) !!}
           @endif
-          <a href="https://www.paypal.com/paypalme/kelvindoefoundation/" target="_blank"><button type="submit" class="btn action">Donate</button></a>
+          <a href="https://www.paypal.com/paypalme/kelvindoefoundation/" target="_blank" class="btn btn-primary">Donate</a>
         </div>
     </nav>
   </div>

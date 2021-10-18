@@ -1,11 +1,4 @@
 <?php
-if( function_exists('acf_add_options_page') ) {
-    acf_add_options_page( [
-        'page_title' => 'Kelvin Doe Foundation Setting',
-        'menu_title' => 'Kelvin Doe Foundation Setting',
-        'menu_slug' => 'kelvin-doe-foundation-setting',
-    ]);
-}
 
 /**
  * ACF Local JSON
@@ -28,3 +21,11 @@ add_filter('acf/settings/load_json', function ( $paths ) {
     // return
     return $paths;
 });
+
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page( [
+        'page_title' => 'Theme Settings',
+        'menu_title' => 'Theme Settings',
+        'menu_slug' => 'kelvin-doe-foundation-settings',
+    ]);
+}

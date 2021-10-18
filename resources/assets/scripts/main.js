@@ -28,3 +28,10 @@ const routes = new Router({
 // Load Events
 jQuery(document).ready(() => routes.loadEvents());
 dom.watch();
+
+import { Header } from './layouts/Header';
+
+// eslint-disable-next-line no-unused-vars
+jQuery(document).ready(function($) {
+  Header.onLoad()
+})

@@ -14,8 +14,8 @@ const TinkeringChallenge = {
     $(window).on('resize', function() {
       setTimeout( () => {
         $('#honorable-mentions-carousel-wrap').css('visibility', 'hidden')
-        $('#honorable-mentions-carousel').owlCarousel('destroy');
-        ArchivePodcasts.honorableMentionsCarousel()
+        $('#honorable-mentions-carousel').owlCarousel('destroy')
+        TinkeringChallenge.honorableMentionsCarousel()
       }, 500)
     })
   },
@@ -25,20 +25,20 @@ const TinkeringChallenge = {
       margin:10,
       responsiveClass:true,
       responsive:{
-          0:{
-              items:1,
-              nav:true
-          },
-          600:{
-              items:3,
-              nav:false
-          },
-          1000:{
-              items:5,
-              nav:true,
-              loop:false
-          }
-      }
+        0:{
+          items:1,
+          nav:true,
+        },
+        600:{
+          items:3,
+          nav:false,
+        },
+        1000:{
+          items:5,
+          nav:true,
+          loop:false,
+        },
+      },
     })
     /*
     console.log($('#honorable-mentions-carousel').length)

@@ -2,6 +2,8 @@
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 .cache-loader
 dist
+.DS_Store
+resources/.DS_Store
 node_modules
 npm-debug.log
 yarn-error.log

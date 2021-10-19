@@ -29,9 +29,11 @@ const routes = new Router({
 jQuery(document).ready(() => routes.loadEvents());
 dom.watch();
 
-import { Header } from './layouts/Header';
+import { Header } from './layouts/header';
+import { TemplateHome } from './modules/templateHome';
 
 // eslint-disable-next-line no-unused-vars
 jQuery(document).ready(function($) {
   Header.onLoad()
+  TemplateHome.onLoad()
 })

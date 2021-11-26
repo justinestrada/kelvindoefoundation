@@ -19,7 +19,7 @@
 }
 </style>
 @php
-$tinkering_challenge = get_field('tinkering_challenge')
+$tinkering_challenge = get_field('tinkering_challenge');
 @endphp
 <section id="tinkering-challenge" class="bg-dark-purple text-white py-5">
   <div class="container">
@@ -48,15 +48,6 @@ $tinkering_challenge = get_field('tinkering_challenge')
                     <img src="{{ $mention['image']['url'] }}" alt="{{ $mention['image']['alt'] }}"/>
                   </div>
                   <h3 class="strategy-block__item-title">{{ $mention['title'] }}</h3>
-                  <div class="strategy-block__item-content">
-                    <h4 class="strategy-block__item-content-title">{{ $mention['title'] }}</h4>
-                    @if ($mention['description'])
-                      <div class="strategy-block__item-description">{{ $mention['description'] }}</div>
-                    @endif
-                    @if ($mention['link'])
-                      <a class="strategy-block__item-link btn-light" href="https://youtu.be/1IWzIWhcGAU">See More</a>
-                    @endif
-                  </div>        
                 </div>
               @endforeach
             </div>

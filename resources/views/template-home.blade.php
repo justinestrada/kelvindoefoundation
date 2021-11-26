@@ -7,4 +7,5 @@
   @include('partials.hero')
   @include('modules.home.tinkering-challenge')
   @include('modules.home.recent-posts')
+  @include('modules.home.podcasts')
 @endsection
